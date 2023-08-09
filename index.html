@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Ayman Dirbas Portfolio</title>
+        <style>
+            body{
+                background-color: #343434;
+            }
+            #pdfViewer{
+                border: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    <body>
+      <script type="text/javascript">
+        $(document).ready(function(){
+            let iframe=$('<iframe />', {
+                name: 'pdfViewer',
+                id: 'pdfViewer',
+                src: 'https://drive.google.com/file/d/1ySb-gcoABIR1ffdPXNYwy5UvBllAGZjf/preview'
+            }).appendTo('body');
+        })
+      </script>
+    </body>
+</html>
